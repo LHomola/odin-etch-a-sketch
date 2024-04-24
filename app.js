@@ -8,14 +8,19 @@ function createDivGrid() {
     for (let i = 0; i < gridSize * gridSize; i++) {
         const divCell = document.createElement("div");
     
+        divCell.style.backgroundColor = "white";
+        divCell.style.border = "1px solid black";
         divCell.style.height = `${mainContainerWidth}px`;
         divCell.style.width = `${mainContainerWidth}px`;
 
-        const divContent = document.createTextNode(`${i}`);
-        
-        divCell.appendChild(divContent);
+        attachHoverEventListener(divCell);
+
         mainContainer.appendChild(divCell);
     }
+}
+
+function attachHoverEventListener(divCell) {    
+    divCell.addEventListener("mouseover", () => { divCell.style.backgroundColor = "black"});
 }
 
 createDivGrid();
