@@ -45,8 +45,8 @@ function attachHoverEventListener(divCell) {
 }
 
 function updateSizeBtnlabel() {
-    const sizeBtn = document.querySelector("#gridSizeBtn");
-    sizeBtn.textContent = `Change grid size. Current size: ${gridSize} squares / row`;
+    const sizeLbl = document.querySelector("#sizeLabel");
+    sizeLbl.textContent = `Current size: ${gridSize} squares / row`;
 }
 
 createDivGrid();
