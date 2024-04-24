@@ -1,13 +1,16 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     background-color: darkolivegreen;
 }
 
 .main-container {
-    height: 960px;
-    width: 960px;
+    margin-top: 1em;
+    height: 880px;
+    width: 880px;
+    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
 }
