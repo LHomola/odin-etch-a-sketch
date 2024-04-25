@@ -7,7 +7,7 @@ function changeGridSize() {
 
     // limit size of grid to avoid potential delays, freezing, or crashing
     do {
-        input = prompt("Provide grid size in squares / row: ");
+        input = prompt("Provide grid size in squares per row (!!! max 100 !!!): ");
         if (input === null) { // if user cancels the prompt assign default value
             input = '16';
         }
@@ -51,7 +51,7 @@ function createDivGrid() {
         const divCell = document.createElement("div");
 
         divCell.style.backgroundColor = "white";
-        divCell.style.opacity = 0.0/*  */;
+        divCell.style.opacity = 0.0;
         divCell.style.border = "1px solid black";
         divCell.style.boxSizing = "border-box";
         divCell.style.height = `${mainContainerWidth}px`;
