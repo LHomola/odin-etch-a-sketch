@@ -10,7 +10,7 @@ body {
     margin-top: 1em;
     height: 880px;
     width: 880px;
-    background-color: aqua;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
 }
